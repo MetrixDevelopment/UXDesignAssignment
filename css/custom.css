@@ -1,0 +1,13 @@
+/* Custom CSS code in this file. */
+/* CSS added to this file will not be overwritten when SASS recompiles */
+
+
+/* Custom right aligned dropdown menu class - prevents the dropdown in the navbar overflowing */
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+.nav-btn-fixed-width{
+    width: 150px !important;
+}
