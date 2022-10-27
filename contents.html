@@ -10,13 +10,143 @@
     <meta name="description" content="Online, jargon free coding tutorials">
 
     <!-- Link back to external CSS and JS files -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Icons link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- JQuery, Popper and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS Script -->
     <script src="scripts.js"></script>
 
-    <title>W5 Universities ~ Contents</title>
+
+    <title>W5 Universities ~ Home</title>
     
 </head>
 <body>
+
+    <!-- Navigation bar -->
     
+    <nav class="navbar sticky-top navbar-light bg-primary d-print-none">
+        <a class="navbar-brand" href="index.html">
+            <img src="/images/W5 Universites - White.png" width="40" height="40" class="d-inline-block align-center"
+                alt="Logo">
+            W5 Univiersites
+        </a>
+    
+        <!-- Nav buttons that are alligned right -->
+        <div class="d-flex flex-row">
+
+            <!-- Contents button -->
+            <a href="contents.html">
+                <button type="button" class="btn m-2 btn-secondary nav-btn-fixed-width">Content</button>
+            </a>
+
+            <!-- Drop down Articles button -->
+            <div class="dropdown">
+                <button class="btn m-2 p-2 btn-secondary dropdown-toggle nav-btn-fixed-width" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Articles
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="variables.html">Variables</a>
+                    <a class="dropdown-item" href="dataTypes.html">Data Types</a>
+                    <a class="dropdown-item" href="ifStatements.html">If Statements</a>
+                    <a class="dropdown-item" href="forLoops.html">For Loops</a>
+                    <a class="dropdown-item" href="whileLoops.html">While Loops</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation bar ends -->
+
+    <!-- MAIN PAGE CONTENT HERE -->
+
+    <!-- Main page content div - keeps everything centered -->
+    <div class="d-flex align-items-center flex-column main-content-min-div-h">
+
+        <h1 class="mt-2">Content</h1>
+
+        <h2 class="mt-2">Handling Data</h2>
+
+        <!-- Page links & Descriptions -->
+        <div class="align-items-left mt-2">
+            <a class="link-font-colour" href="dataTypes.html">
+                <p><Strong>Data Types</Strong> - Learn how data is represented in a program.</p>
+            </a>
+            <a class="link-font-colour" href="variables.html">
+                <p><Strong>Variables</Strong> - Learn how data can be stored and used in a program.</p>
+            </a>
+
+            <br>
+            <hr class="solid">
+            <br>
+        </div>
+
+        <h2 class="mt-2">controlling the flow</h2>
+
+        <!-- Page links & Descriptions -->
+        <div class="align-items-left mt-2">
+            <a class="link-font-colour" href="ifStatements.html">
+                <p><Strong>If Statements</Strong> - Learn how to use conditions to control a programs behavior.</p>
+            </a>
+            <a class="link-font-colour" href="forLoops.html">
+                <p><Strong>For Loops</Strong> - Learn how to repeat blocks of code using conditions.</p>
+            </a>
+            <a class="link-font-colour" href="whileLoops.html">
+                <p><Strong>While Loops</Strong> - Learn how to repeat code blocks for as long as a condition is true.</p>
+            </a>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- MAIN PAGE CONTENT END -->
+
+    <!-- Footer starts here -->
+
+    <nav class="navbar static-bottom navbar-light bg-secondary justify-content-between d-print-none">
+        <p class="navbar-brand m-2">M5 Universities ©</p>
+
+        <!-- Accecibility option buttons -->
+        <div class="btn-group">
+            <button class="btn m-1 p-2 btn-primary" type="button" disabled>
+                <i class="material-icons" style="font-size: 30px">text_fields</i>
+            </button>
+            <button class="btn m-1 p-2 btn-primary" type="button" disabled>
+                <i class="material-icons" style="font-size: 30px">contrast</i>
+            </button>
+            <button class="btn m-1 p-2 btn-primary" type="button" onclick="printPageArea()">
+                <i class="material-icons" style="font-size: 30px">print</i>
+            </button>
+        </div>
+
+        <!-- Report an issue link -->
+        <a class = "link-font-colour" href="mailto:support@metrix.org.uk">
+            <p class="m-2">Problem? Let us know!</p>
+        </a>
+
+    </nav>
+
+    <!-- Footer ends here -->
+
+    <!-- JS for print button -->
+
+    <script>
+
+        // JavaScript for Print Area
+        function printPageArea() {
+            window.print();
+        }
+    </script>
+
 </body>
 </html>

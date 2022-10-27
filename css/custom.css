@@ -1,0 +1,42 @@
+/* Custom CSS code in this file. */
+/* CSS added to this file will not be overwritten when SASS recompiles */
+
+/* Custom font */
+body {
+    font-family: 'Tahoma' !important;
+    
+}
+
+/* Custom right aligned dropdown menu class - prevents the dropdown in the navbar overflowing */
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+/* Custom navigation bar button width - makes thinks look a bit more uniform */
+.nav-btn-fixed-width{
+    width: 150px !important;
+}
+
+/* Custom hyperlink colour */
+
+.link-font-colour{
+    color: black;
+}
+
+.link-font-colour:hover{
+    color: #E64848;
+}
+
+/* Custom div max width classes for the main content section - keeps the contained text from getting
+    too stretched out across wider screens */
+
+.main-content-max-div-w{
+    max-width: 500px;
+}
+
+/* Quick side note - this is to ensure the footer is never pushed off screen if the main content div isnt big enough */
+.main-content-min-div-h{
+    min-height: calc(100vh - 152px);
+}
+
