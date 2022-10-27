@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Google Icons link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <!-- JQuery, Popper and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -21,6 +24,7 @@
     <!-- Custom JS Script -->
     <script src="scripts.js"></script>
 
+
     <title>W5 Universities ~ Home</title>
     
 </head>
@@ -28,7 +32,7 @@
 
     <!-- Navigation bar -->
     
-    <nav class="navbar navbar-light bg-primary">
+    <nav class="navbar sticky-top navbar-light bg-primary d-print-none">
         <a class="navbar-brand" href="#">
             <img src="/images/W5 Universites - White.png" width="40" height="40" class="d-inline-block align-center"
                 alt="Logo">
@@ -57,6 +61,86 @@
             </div>
         </div>
     </nav>
+
+    <!-- Navigation bar ends -->
+
+    <!-- MAIN PAGE CONTENT HERE -->
+
+    <!-- Main page content div - keeps everything centered -->
+    <div class="d-flex align-items-center flex-column justify-content-">
+
+        <!-- Welcome message -->
+        <h1 class="mt-2">Welcome!</h1>
+        <div class="main-content-max-div-w text-center">
+            <p>Welcome to W5 Universities! Founded in 2022, W5 is a new and up-an-coming programming tutorial site. While currently in early preview mode we aim to have the full site operational soon and can’t wait to bring you even more tutorials in even more languages!</p>
+            <br>
+            <p>W5 currently only offers tutorials for <strong>Java programming</strong> – don’t let it discourage you! Most concepts also apply to other C-derived languages such as C++ and C# (Of course with some slight differences in format and keywords). </p>
+                
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- Site instructions -->
+
+        <h2 class="mt-2">How to use the site</h2>
+        <div class="main-content-max-div-w text-center">
+            <p>We’ve tried to make using the W5 site is easy and intuitive as possible! The <strong>contents button leads to a detailed list of all the articles</strong> and materials present on the site while the articles drop down offers a more direct route to each article.</p>
+            <br>
+
+            <h3>Material Pages</h3> 
+
+            <p>Each article page includes a written explanation of the concept in question, as well as code examples and tutorial videos when appropriate. Additionally, some pages feature an interactive quiz that tests the knowledge developed by reading the materials.</p>
+            <br>
+
+            <h3>Accessibility</h3>
+
+            <p>Located in the footer of the site, you’ll find the <strong>accessibility and print features</strong>. There are options for changing the font to a more dyslexic friendly format and changing the sites colour theme to a high contrast version. Additionally, the print button can be used to quickly print the contents of whichever page you’re currently visiting. <strong>(Please note that currently, only the print feature has been implemented)</strong>.</p>
+
+        </div>
+
+
+    </div>
+
+    <!-- MAIN PAGE CONTENT END -->
+
+    <!-- Footer starts here -->
+
+    <nav class="navbar static-bottom navbar-light bg-secondary justify-content-between d-print-none">
+        <p class="navbar-brand m-2">M5 Universities ©</p>
+
+        <!-- Accecibility option buttons -->
+        <div class="btn-group">
+            <button class="btn m-1 p-2 btn-primary" type="button" disabled>
+                <i class="material-icons" style="font-size: 30px">text_fields</i>
+            </button>
+            <button class="btn m-1 p-2 btn-primary" type="button" disabled>
+                <i class="material-icons" style="font-size: 30px">contrast</i>
+            </button>
+            <button class="btn m-1 p-2 btn-primary" type="button" onclick="printPageArea()">
+                <i class="material-icons" style="font-size: 30px">print</i>
+            </button>
+        </div>
+
+        <!-- Report an issue link -->
+        <a class = "footer-link-font-colour" href="mailto:support@metrix.org.uk">
+            <p class="m-2">Problem? Let us know!</p>
+        </a>
+
+    </nav>
+
+    <!-- Footer ends here -->
+
+    <!-- JS for print button -->
+
+    <script>
+
+        // JavaScript for Print Area
+        function printPageArea() {
+            window.print();
+        }
+    </script>
 
 </body>
 </html>

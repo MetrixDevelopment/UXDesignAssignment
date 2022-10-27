@@ -1,8 +1,11 @@
-// Variable overides
+// Variable overides - Keep above the import...
 
 // Colour Scheme
 $primary: #77A3F5;
 $secondary: #CDD4D0;
 
 
+// Bootstrap SCSS Import
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+

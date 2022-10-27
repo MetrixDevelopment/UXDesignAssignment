@@ -2,12 +2,44 @@
 /* CSS added to this file will not be overwritten when SASS recompiles */
 
 
+/* Custom High Contrast theme CSS Variables */
+
+.theme-hc{
+    --colour-primary: #fc4605;
+}
+
+.custom-body {
+    background-color: var(--primary-hc) !important;
+}
+
 /* Custom right aligned dropdown menu class - prevents the dropdown in the navbar overflowing */
 .dropdown-menu-right {
     right: 0;
     left: auto;
 }
 
+/* Custom navigation bar button width - makes thinks look a bit more uniform */
 .nav-btn-fixed-width{
     width: 150px !important;
+}
+
+/* Custom footer hyperlink colour */
+
+.footer-link-font-colour{
+    color: black;
+}
+
+.footer-link-font-colour:hover{
+    color: #E64848;
+}
+
+/* Custom div max width classes for the main content section - keeps the contained text from getting
+    too stretched out across wider screens */
+
+.main-content-max-div-w{
+    max-width: 500px;
+}
+
+body {
+    font-family: 'Tahoma' !important;
 }
