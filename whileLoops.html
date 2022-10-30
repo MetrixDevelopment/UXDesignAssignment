@@ -17,102 +17,148 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- JQuery, Popper and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
     <!-- Custom JS Script -->
     <script src="scripts.js"></script>
 
+    <title>W5 Universities ~ While Loops</title>
 
-    <title>W5 Universities ~ Home</title>
-    
 </head>
 <body>
 
-    <!-- Navigation bar -->
-    
-    <nav class="navbar sticky-top navbar-light bg-primary d-print-none">
-        <a class="navbar-brand" href="index.html">
-            <img src="/images/W5 Universites - White.png" width="40" height="40" class="d-inline-block align-center"
-                alt="Logo">
-            W5 Univiersites
+<!-- Navigation bar -->
+
+<nav class="navbar sticky-top navbar-light bg-primary d-print-none">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/W5%20Universites%20-%20White.png" width="40" height="40" class="d-inline-block align-center"
+             alt="Logo">
+        W5 Universities
+    </a>
+
+    <!-- Nav buttons that are alligned right -->
+    <div class="d-flex flex-row">
+
+        <!-- Contents button -->
+        <a href="contents.html">
+            <button type="button" class="btn m-2 btn-secondary nav-btn-fixed-width">Content</button>
         </a>
-    
-        <!-- Nav buttons that are alligned right -->
-        <div class="d-flex flex-row">
 
-            <!-- Contents button -->
-            <a href="contents.html">
-                <button type="button" class="btn m-2 btn-secondary nav-btn-fixed-width">Content</button>
-            </a>
-
-            <!-- Drop down Articles button -->
-            <div class="dropdown">
-                <button class="btn m-2 btn-secondary dropdown-toggle nav-btn-fixed-width" type="button" data-toggle="dropdown" aria-haspopup="true"
+        <!-- Drop down Articles button -->
+        <div class="dropdown">
+            <button class="btn m-2 btn-secondary dropdown-toggle nav-btn-fixed-width" type="button"
+                    data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
-                    Articles
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="variables.html">Variables</a>
-                    <a class="dropdown-item" href="dataTypes.html">Data Types</a>
-                    <a class="dropdown-item" href="ifStatements.html">If Statements</a>
-                    <a class="dropdown-item" href="forLoops.html">For Loops</a>
-                    <a class="dropdown-item" href="whileLoops.html">While Loops</a>
-                </div>
+                Articles
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="variables.html">Variables</a>
+                <a class="dropdown-item" href="dataTypes.html">Data Types</a>
+                <a class="dropdown-item" href="ifStatements.html">If Statements</a>
+                <a class="dropdown-item" href="forLoops.html">For Loops</a>
+                <a class="dropdown-item" href="whileLoops.html">While Loops</a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Navigation bar ends -->
+<!-- Navigation bar ends -->
 
-    <!-- MAIN PAGE CONTENT HERE -->
+<!-- MAIN PAGE CONTENT HERE -->
 
-    <!-- Main page content div - keeps everything centered -->
-    <div class="d-flex align-items-center flex-column main-content-min-div-h">
+<!-- Main page content div - keeps everything centered -->
+<div class="d-flex align-items-center flex-column main-content-min-div-h">
+    <h1 class="mt-2">
+        While Loops
+    </h1>
 
+    <br>
+
+    <div class="main-content-max-div-w text-center">
+
+        <p>With Java, a while loop is implemented in a program to loop a block of code repeatedly until the specified
+            condition set by the program is true. When the condition is met, the loop stops.</p>
+
+        <br>
+        <h3>Video explanation</h3>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/lr7FO3rr8jg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <br>
+        <hr class="solid">
+        <br>
+
+
+        <h3>Code Example</h3>
+
+        <p>In the exemplar below, the block of code in the while loop will execute, over and over again, until variable (i) is less than 5:</p>
+        <br>
+        <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=22px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=int%2520i%2520%253D%25200%253B%250Awhile%2520%28i%2520%253C%25205%29%2520%257B%250A%2520%2520System.out.println%28i%29%253B%250A%2520%2520i%252B%252B%253B%250A%257D"
+                style="width: 240px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <br>
+        <br>
+        <p> Part 1: The first part sets the variable before the loop starts. <strong>In this case it is int i =
+            0</strong></p>
+        <p> Part 2: In the scond part, it defines the condition that the for loop will run. <strong>In this example it
+            is i < 5</strong>.
+            If the condition is true, it will start the loop again until the condition is false.</p>
+        <p> Part 3: The final part of the statement will increase the value (i) each time the loop has been
+            executed.</p>
     </div>
 
+</div>
+</div>
+<!-- MAIN PAGE CONTENT END -->
 
+<!-- Footer starts here -->
 
-    <!-- MAIN PAGE CONTENT END -->
+<nav class="navbar static-bottom navbar-light bg-secondary justify-content-between d-print-none">
+    <p class="navbar-brand m-2">M5 Universities ©</p>
 
-    <!-- Footer starts here -->
+    <!-- Accecibility option buttons -->
+    <div class="btn-group">
+        <button class="btn m-1 p-2 btn-primary" type="button" disabled>
+            <i class="material-icons" style="font-size: 30px">text_fields</i>
+        </button>
+        <button class="btn m-1 p-2 btn-primary" type="button" disabled>
+            <i class="material-icons" style="font-size: 30px">contrast</i>
+        </button>
+        <button class="btn m-1 p-2 btn-primary" type="button" onclick="printPageArea()">
+            <i class="material-icons" style="font-size: 30px">print</i>
+        </button>
+    </div>
 
-    <nav class="navbar static-bottom navbar-light bg-secondary justify-content-between d-print-none">
-        <p class="navbar-brand m-2">M5 Universities ©</p>
+    <!-- Report an issue link -->
+    <a class="link-font-colour" href="mailto:support@metrix.org.uk">
+        <p class="m-2">Problem? Let us know!</p>
+    </a>
 
-        <!-- Accecibility option buttons -->
-        <div class="btn-group">
-            <button class="btn m-1 p-2 btn-primary" type="button" disabled>
-                <i class="material-icons" style="font-size: 30px">text_fields</i>
-            </button>
-            <button class="btn m-1 p-2 btn-primary" type="button" disabled>
-                <i class="material-icons" style="font-size: 30px">contrast</i>
-            </button>
-            <button class="btn m-1 p-2 btn-primary" type="button" onclick="printPageArea()">
-                <i class="material-icons" style="font-size: 30px">print</i>
-            </button>
-        </div>
+</nav>
 
-        <!-- Report an issue link -->
-        <a class = "link-font-colour" href="mailto:support@metrix.org.uk">
-            <p class="m-2">Problem? Let us know!</p>
-        </a>
+<!-- Footer ends here -->
 
-    </nav>
+<!-- JS for print button -->
 
-    <!-- Footer ends here -->
+<script>
 
-    <!-- JS for print button -->
-
-    <script>
-
-        // JavaScript for Print Area
-        function printPageArea() {
-            window.print();
-        }
-    </script>
+    // JavaScript for Print Area
+    function printPageArea() {
+        window.print();
+    }
+</script>
 
 </body>
 </html>
