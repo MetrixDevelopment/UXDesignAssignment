@@ -71,6 +71,44 @@
     <!-- Main page content div - keeps everything centered -->
     <div class="d-flex align-items-center flex-column main-content-min-div-h">
 
+        <div class="d-flex align-items-center flex-column quiz-div">
+
+            <h2>Quiz</h2>
+            <br>
+            <p>Select the missing keyword!</p>
+            <br>
+
+            <p>When declaring variables the ________ sign is used to assign a value.</p>
+            <br>
+            <br>
+
+            <form>
+                <input class="AnswerCheckbox" type="checkbox" id="Answer1">
+                <label>Greater than</label>
+
+                <br>
+                <input class="AnswerCheckbox" type="checkbox" id="Answer2">
+                <label>Equals</label>
+
+                <br>
+                <input class="AnswerCheckbox" type="checkbox" id="Answer3">
+                <label>Less than</label>
+
+                <br>
+                <input class="AnswerCheckbox" type="checkbox" id="Answer4">
+                <label>Pound</label>
+
+                <br>
+                <br>
+
+                <button type="button" class="btn m-2 btn-primary nav-btn-fixed-width" onclick="checkAnswer()">Check Answer</button>
+
+
+            </form>
+
+
+        </div>
+
     </div>
 
 
@@ -111,6 +149,33 @@
         // JavaScript for Print Area
         function printPageArea() {
             window.print();
+        }
+
+        // JavaScript for checking quiz answer
+        function checkAnswer() {
+            
+            // declare variables
+            var checkboxArray = document.getElementsByClassName("AnswerCheckbox"); // create an array consisting of the 4 checkboxes
+            var numberOfCheckedBoxes = 0;
+            var correctAnswer = 2; // set the value of the correct answer (whichever checkbox it is)
+
+            // Loop though each checkbox, checking if more than one has been selected
+            for (var i = 0; i < checkboxArray.length; i++)
+            {
+
+                if (checkboxArray.item(i).checked === true) {
+                    numberOfCheckedBoxes++;
+                    
+
+                    // Print an error message if mroe than one checkbox is selected
+                    if(numberOfCheckedBoxes > 1)
+                    {
+                        alert("Uh oh! It looks like you've selected more than one answer! Try picking just one!");
+                    } else if(i === correctAnswer - 1) {
+                        alert("correct");
+                    }
+                }
+            }
         }
     </script>
 

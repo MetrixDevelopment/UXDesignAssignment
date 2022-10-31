@@ -40,3 +40,12 @@ body {
     min-height: calc(100vh - 152px);
 }
 
+/* Custom Quiz div */
+.quiz-div {
+    width: 500px;
+    height: 500px;
+    background-color: #CDD4D0;
+    border-radius: 10px;
+    padding: 20px
+}
+
