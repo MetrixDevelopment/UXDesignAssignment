@@ -49,3 +49,15 @@ body {
     padding: 20px
 }
 
+/* Animation stuff */
+
+.quiz-msg-text{
+    color: white;
+}
+
+.cube {
+    height: 50px;
+    width: 50px;
+    background-color: royalblue;
+    opacity: 0;
+}
