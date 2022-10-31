@@ -74,40 +74,92 @@
             Variables
         </h1>
 
+        <br>
+
         <div class="main-content-max-div-w text-center">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea excepturi eius consequatur quasi expedita repellat sit? Quos esse fuga quas dicta quae explicabo fugit vero, et id accusamus iure nihil quidem eum itaque? Rerum hic quidem ipsa quasi atque porro vitae mollitia! Culpa adipisci reiciendis esse recusandae alias libero magnam!</p>
+
+            <p>Variables are containers for storing data values. In Java, there are different types of variables, for example:</p>
+
+
+            <table class="table table-striped">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>String</strong> - stores text, such as "Hello". String values are surrounded by double quotes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>int</strong> - stores integers (whole numbers), without decimals, such as 123 or -123</td>
+                    </tr>
+                    <tr>
+                        <td><strong>float</strong> - stores floating point numbers, with decimals, such as 19.99 or -19.99</td>
+                    </tr>
+                    <tr>
+                        <td><strong>char</strong> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>boolean</strong> - stores values with two states: true or false, often used for conditionals</td>
+                    </tr>
+                </tbody>
+            </table>
+
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus ea expedita quia minus porro laudantium facilis fuga cum eos aliquid earum rerum sapiente ipsum, odio cumque numquam. Debitis sequi sunt ex ullam. Cum illum eaque quidem quasi unde impedit? Fugiat alias ullam, vero suscipit id incidunt tenetur quod mollitia.</p>
+
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/N8LDSryePuc" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            <br>
+            <br>
+
+            <h4>Assigning Values to Variables</h4>
+
+            <p>To create a variable, you must specify the type and assign it a value. In the following example, where type is one 
+                of Java's types (such as int or String), and variableName is the name of the variable (such as x or name). 
+                The equal sign is used to assign values to the variable.</p>
+
+            <table class="table table-striped">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>type variableName = value;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <br>
+            <br>
+
+            <h4>Final Variables</h4>
+
+            <br>
+            <p>If you don't want others (or yourself) to overwrite existing values, use the final keyword (this will 
+                declare the variable as "final" or "constant", which means unchangeable and read-only):</p>
+
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=base16-dark&wt=none&l=text%2Fx-java&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=final%2520int%2520myNum%2520%253D%252015%253B%250AmyNum%2520%253D%252020%253B%2520%2520%252F%252F%2520will%2520generate%2520an%2520error%253A%2520cannot%2520assign%2520a%2520value%2520to%2520a%2520final%2520variable"
+            style="width: 500px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+            <br>
+            <br>
+            <br>
+
+            <h4>Variable Assignment Examples</h4>
+
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=base16-dark&wt=none&l=text%2Fx-java&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=int%2520myNum%2520%253D%25205%253B%250Afloat%2520myFloatNum%2520%253D%25205.99f%253B%250Achar%2520myLetter%2520%253D%2520%27D%27%253B%250Aboolean%2520myBool%2520%253D%2520true%253B%250AString%2520myText%2520%253D%2520%2522Hello%2522%253B"
+            style="width: 361px; height: 279px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
         </div>
 
         <br>
-        <br>
-        <br>
-
-        <h2 class="mt-2">Integers</h2>
-        <div class="main-content-max-div-w text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eos dolore rerum nihil aliquam nesciunt eveniet minus voluptates necessitatibus blanditiis accusamus unde voluptatibus quisquam consequatur suscipit esse. Optio, consectetur esse quos tempora magni debitis, dolor voluptatem nemo perspiciatis repellendus iste praesentium id cupiditate itaque, quis eius consequuntur totam ipsam. Magni.</p>
-            <br>
-            <iframe width="500" height="300" src="https://www.youtube.com/embed/OSfDRqxmXAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <h2 class="mt-2">Strings</h2>
-        <div class="main-content-max-div-w text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eos dolore rerum nihil aliquam nesciunt eveniet minus voluptates necessitatibus blanditiis accusamus unde voluptatibus quisquam consequatur suscipit esse. Optio, consectetur esse quos tempora magni debitis, dolor voluptatem nemo perspiciatis repellendus iste praesentium id cupiditate itaque, quis eius consequuntur totam ipsam. Magni.</p>
-            <br>
-
-        </div>
-
-        <h2 class="mt-2">Float</h2>
-        <div class="main-content-max-div-w text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eos dolore rerum nihil aliquam nesciunt eveniet minus voluptates necessitatibus blanditiis accusamus unde voluptatibus quisquam consequatur suscipit esse. Optio, consectetur esse quos tempora magni debitis, dolor voluptatem nemo perspiciatis repellendus iste praesentium id cupiditate itaque, quis eius consequuntur totam ipsam. Magni.</p>
-            <br>
-
-        </div>
     </div>
-
-
-
+    </div>
     <!-- MAIN PAGE CONTENT END -->
 
     <!-- Footer starts here -->
