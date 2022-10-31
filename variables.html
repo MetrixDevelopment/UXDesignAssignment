@@ -112,7 +112,7 @@
 
         </div>
 
-        <div class="cube d-flex justify-content-center align-items-center flex-column">
+        <div class="cube d-flex justify-content-center align-items-center flex-column" id="award-div">
             <h1 class="quiz-msg-text">Well done!</h1>
             <br>
             <h1>😄</h1>
@@ -180,7 +180,7 @@
                     if(numberOfCheckedBoxes > 1)
                     {
                         alert("Uh oh! It looks like you've selected more than one answer! Try picking just one!");
-                        
+
                     } else if(i === correctAnswer - 1) {
                         
                                 anime({
@@ -197,14 +197,13 @@
                         height: [
                             {value: '200px', duration: 4000}
                         ],
-                        translateX : [
-                            {value: '1000px', duration: 8000, delay: 4000}
-                        ],
                         rotate: [
                             {value: '5turn', duration: 8000, delay: 4000}
-                        ]   
-                    });
-
+                        ],
+                        translateX: [
+                            {value: '-1000px', duration: 8000, delay: 4000}
+                        ]
+                        });
                     }
                 }
             }
