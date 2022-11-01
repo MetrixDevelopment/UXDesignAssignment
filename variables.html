@@ -21,9 +21,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <!-- Anime library -->
-    <script src="node_modules/animejs/lib/anime.min.js"></script>
-
     <!-- Custom JS Script -->
     <script src="scripts.js"></script>
 
@@ -73,26 +70,102 @@
 
     <!-- Main page content div - keeps everything centered -->
     <div class="d-flex align-items-center flex-column main-content-min-div-h">
+        <h1 class="mt-2">
+            Variables
+        </h1>
 
-        <div class="d-flex align-items-center flex-column under-construction-div">
-            <h1>Uh Oh!</h1>
-            <br>
-            <h2>This page is currently under construction.</h2>
+        <br>
+
+        <div class="main-content-max-div-w text-center">
+
+            <p>Variables are containers for storing data values. In Java, there are different types of variables, for example:</p>
+
+
+            <table class="table table-striped">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>String</strong> - stores text, such as "Hello". String values are surrounded by double quotes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>int</strong> - stores integers (whole numbers), without decimals, such as 123 or -123</td>
+                    </tr>
+                    <tr>
+                        <td><strong>float</strong> - stores floating point numbers, with decimals, such as 19.99 or -19.99</td>
+                    </tr>
+                    <tr>
+                        <td><strong>char</strong> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>boolean</strong> - stores values with two states: true or false, often used for conditionals</td>
+                    </tr>
+                </tbody>
+            </table>
+
             <br>
 
-            <object class="under-construction-svg" data="/images/newPic.jpg" height="100px" width="100px"></object>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/N8LDSryePuc" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            <br>
+            <br>
+
+            <h4>Assigning Values to Variables</h4>
+
+            <p>To create a variable, you must specify the type and assign it a value. In the following example, where type is one 
+                of Java's types (such as int or String), and variableName is the name of the variable (such as x or name). 
+                The equal sign is used to assign values to the variable.</p>
+
+            <table class="table table-striped">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>type variableName = value;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <br>
+            <br>
+
+            <h4>Final Variables</h4>
+
+            <br>
+            <p>If you don't want others (or yourself) to overwrite existing values, use the final keyword (this will 
+                declare the variable as "final" or "constant", which means unchangeable and read-only):</p>
+
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=base16-dark&wt=none&l=text%2Fx-java&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=final%2520int%2520myNum%2520%253D%252015%253B%250AmyNum%2520%253D%252020%253B%2520%2520%252F%252F%2520will%2520generate%2520an%2520error%253A%2520cannot%2520assign%2520a%2520value%2520to%2520a%2520final%2520variable"
+            style="width: 500px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+            <br>
+            <br>
+            <br>
+
+            <h4>Variable Assignment Examples</h4>
+
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=base16-dark&wt=none&l=text%2Fx-java&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=int%2520myNum%2520%253D%25205%253B%250Afloat%2520myFloatNum%2520%253D%25205.99f%253B%250Achar%2520myLetter%2520%253D%2520%27D%27%253B%250Aboolean%2520myBool%2520%253D%2520true%253B%250AString%2520myText%2520%253D%2520%2522Hello%2522%253B"
+            style="width: 361px; height: 279px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
         </div>
 
+        <br>
     </div>
-
-
-
+    </div>
     <!-- MAIN PAGE CONTENT END -->
 
     <!-- Footer starts here -->
 
     <nav class="navbar static-bottom navbar-light bg-secondary justify-content-between d-print-none">
-        <p class="navbar-brand m-2">W5 Universities ©</p>
+        <p class="navbar-brand m-2">M5 Universities ©</p>
 
         <!-- Accecibility option buttons -->
         <div class="btn-group">
@@ -124,27 +197,7 @@
         function printPageArea() {
             window.print();
         }
-
-        // anime({
-        //     targets: '.under-construction-svg',
-        //     rotate: '1turn',
-        //     duration: 2000,
-        //     easing: 'easeInOutSine',
-        //     loop: true
-        // });
-
-        anime({
-            targets: '.under-construction-svg',
-            scale: 1.5,
-            duration: 2000,
-            direction: 'alternate',
-            easing: 'easeInOutSine',
-            loop: true
-        });
-
-
     </script>
-
 
 </body>
 </html>
