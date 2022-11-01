@@ -16,6 +16,9 @@
     <!-- Google Icons link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <!-- Anime library -->
+    <script src="node_modules/animejs/lib/anime.min.js"></script>
+
     <!-- JQuery, Popper and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -123,8 +126,51 @@
         <p> Part 3: The final part of the statement will increase the value (i) each time the loop has been executed.</p>
     </div>
 
+    <div class="d-flex align-items-center flex-column quiz-div">
+
+        <h2>Quiz</h2>
+        <br>
+        <p>Select the missing keyword!</p>
+        <br>
+
+        <p>In software development, For loops can be used to _________.</p>
+        <br>
+        <br>
+
+        <form>
+            <input class="AnswerCheckbox" type="checkbox" id="Answer1">
+            <label>Change your keyboard layout</label>
+
+            <br>
+            <input class="AnswerCheckbox" type="checkbox" id="Answer2">
+            <label>Turn off devices connected to your computer</label>
+
+            <br>
+            <input class="AnswerCheckbox" type="checkbox" id="Answer3">
+            <label>Change your computers wallpaper</label>
+
+            <br>
+            <input class="AnswerCheckbox" type="checkbox" id="Answer4">
+            <label>Loop through a block of code based on a condition</label>
+
+
+            <br>
+            <br>
+
+            <button type="button" class="btn m-2 btn-primary nav-btn-fixed-width" onclick="checkAnswer()">Check Answer</button>
+
+
+        </form>
+    </div>
+
+    <div class="cube d-flex justify-content-center align-items-center flex-column" id="award-div">
+        <h1 class="quiz-msg-text">Well done!</h1>
+        <br>
+        <h1>😄</h1>
+    </div>
+
 </div>
-</div>
+
 <!-- MAIN PAGE CONTENT END -->
 
 <!-- Footer starts here -->
@@ -162,6 +208,60 @@
     function printPageArea() {
         window.print();
     }
+
+            // JavaScript for checking quiz answer
+            function checkAnswer() {
+            
+            // declare variables
+            var checkboxArray = document.getElementsByClassName("AnswerCheckbox"); // create an array consisting of the 4 checkboxes
+            var numberOfCheckedBoxes = 0;
+            var correctAnswer = 4; // set the value of the correct answer (whichever checkbox it is)
+
+            // Loop though each checkbox, checking if more than one has been selected
+            for (var i = 0; i < checkboxArray.length; i++)
+            {
+
+                if (checkboxArray.item(i).checked === true) {
+                    numberOfCheckedBoxes++;
+                    
+
+                    // Print an error message if mroe than one checkbox is selected
+                    if(numberOfCheckedBoxes > 1)
+                    {
+                        alert("Uh oh! It looks like you've selected more than one answer! Try picking just one!");
+
+                    } else if(i === correctAnswer - 1) {
+                        
+                                anime({
+                        targets: '.cube',
+                        opacity: [
+                            {value: 1, duration: 1000, delay: 50}
+                        ],
+                        translateY: [
+                            {value: -300, duration: 2000, delay: 50}
+                        ],
+                        width: [
+                            {value: '300px', duration: 4000}
+                        ],
+                        height: [
+                            {value: '200px', duration: 4000}
+                        ],
+                        rotate: [
+                            {value: '5turn', duration: 8000, delay: 4000}
+                        ],
+                        translateX: [
+                            {value: '-1000px', duration: 8000, delay: 4000}
+                        ]
+                        });
+                    } 
+                    
+                    if(i != correctAnswer - 1) {
+                        alert("Uh oh! That's not quite right! try picking a different answer!");
+                    }
+                    
+                }
+            }
+        }
 </script>
 
 </body>
