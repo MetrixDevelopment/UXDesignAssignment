@@ -46,7 +46,8 @@ body {
     height: 500px;
     background-color: #CDD4D0;
     border-radius: 10px;
-    padding: 20px
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 /* Animation stuff */
