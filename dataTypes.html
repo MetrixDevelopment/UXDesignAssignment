@@ -70,11 +70,209 @@
 
     <!-- Main page content div - keeps everything centered -->
     <div class="d-flex align-items-center flex-column main-content-min-div-h">
+        <h1 class="mt-2">
+            Data Types
+        </h1>
 
+        <br>
+
+        <div class="main-content-max-div-w text-center">
+
+            <p>Variables must be a specified data type. Data types are divided in to two groups: <strong>Primitive Types</strong> 
+                and <strong>Non-Primitive Types</strong></p>
+            
+            <br>
+            <h3>Primitive Types</h3>
+
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Data Type</th>
+                    <th>Size</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>byte</td>
+                    <td>1 byte</td>
+                    <td>Stores whole numbers from -128 to 127</td>
+                  </tr>
+                  <tr>
+                    <td>short</td>
+                    <td>2 bytes</td>
+                    <td>Stores whole numbers from -32,768 to 32,767</td>
+                  </tr>
+                  <tr>
+                    <td>int</td>
+                    <td>4 bytes</td>
+                    <td>Stores whole numbers from -2,147,483,648 to 2,147,483,647</td>
+                  </tr>
+                  <tr>
+                    <td>long</td>
+                    <td>8 bytes</td>
+                    <td>Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+                  </tr>
+                  <tr>
+                    <td>float</td>
+                    <td>4 bytes</td>
+                    <td>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</td>
+                  </tr>
+                  <tr>
+                    <td>double</td>
+                    <td>8 bytes</td>
+                    <td>Stores fractional numbers. Sufficient for storing 15 decimal digits</td>
+                  </tr>
+                  <tr>
+                    <td>boolean</td>
+                    <td>1 bit</td>
+                    <td>Stores true or false values</td>
+                  </tr>
+                  <tr>
+                    <td>char</td>
+                    <td>2 bytes</td>
+                    <td>Stores a single character/letter or ASCII values</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            <br>
+
+            <h3>Non-Primitive Types</h3>
+
+            <p>Non-primitive data types are called reference types because they refer to objects. The main difference between primitive and non-primitive 
+                data types are:</p>
+
+            <ul class="list-group">
+                <li class="list-group-item">Primitive types are <strong>predefined</strong> (already defined) in Java. Non-primitive types are created by 
+                    the programmer and not defined by Java (except for String).</li>
+                <li class="list-group-item">Non-primitive types can be used to <strong>call methods</strong> to perform certain operations, while 
+                    primitive types cannot.</li>
+                <li class="list-group-item">A primitive type <strong>always</strong> has a value, while non-primitive types can be <strong>null</strong></li>
+                <li class="list-group-item">A primitive type starts with a <strong>lowercase</strong> letter, while non-primitive types start with 
+                    an <strong>uppercase</strong> letter.</li>
+                <li class="list-group-item">The size of a primitive type depends on the <strong>data type</strong>, while non-primitive types have <strong>all</strong> the same size.</li>
+            </ul>
+
+        </div>
+
+        <br>
+        <br>
+
+        <h2 class="mt-2">Numbers</h2>
+        <div class="main-content-max-div-w text-center">
+            <p>Primitive numbers are split between two types:</p>
+            <p><strong>Integer types</strong> store whole numbers, positive or negative (such as 123 or -456), without decimals. Valid types are byte, short, int and long.</p>
+            <p><strong>Floating point types</strong> represent numbers with a fractional part, containing one or more decimals. There are two types: float and double.</p>
+            <br>
+            <h4 class="mt-2">Integer Types - Whole Numbers</h4>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>byte</td>
+                    <td>-128 to 127</td>
+                </tr>
+                <tr>
+                    <td>short</td>
+                    <td>-32,768 to 32,767</td>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>-2,147,483,648 to 2,147,483,647</td>
+                </tr>
+                <tr>
+                    <td>long</td>
+                    <td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4 class="mt-2">Floating Point Types - Decimal Numbers</h4>
+
+            <p>The float and double data types can store fractional numbers. Note that you should end the value with an "f" for floats and "d" for doubles. Doubles
+                have higher precision so are often the preferred choice</p>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Example</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>float</td>
+                    <td>float myNum = 5.75f;</td>
+                </tr>
+                <tr>
+                    <td>double</td>
+                    <td>double myNum = 19.99d;</td>
+                </tr>
+                </tbody>
+            </table>
+            
+            <br>
+            <p>Learn more about integers:
+            </p>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/OSfDRqxmXAE" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <h2 class="mt-2">Boolean Types</h2>
+        <div class="main-content-max-div-w text-center">
+            <p>Very often in programming, you will need a data type that can only have one of two values - Yes/No - True/False etc. The boolean data type handles 
+                this and can be assigned the values <strong>true</strong> and <strong>false</strong></p>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Example</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>boolean</td>
+                        <td>boolean isW5Fun = true;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            <br>
+
+        </div>
+
+        <h2 class="mt-2">Characters</h2>
+        <div class="main-content-max-div-w text-center">
+            <p>The char data type is used to store a single character. The character must be surrounded by single quotes, like 'A' or 'c'.</p> 
+            <p>The String data type is used to store a sequence of characters (text). String values must be surrounded by double quotes</p><br>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Example</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>char</td>
+                    <td>char myGrade = 'B';</td>
+                </tr>
+                <tr>
+                    <td>String</td>
+                    <td>String greeting = "Hello World";</td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
     </div>
-
-
-
     <!-- MAIN PAGE CONTENT END -->
 
     <!-- Footer starts here -->
