@@ -42,7 +42,7 @@ body {
 
 /* Custom Quiz div */
 .quiz-div {
-    width: 500px;
+    width: 70%;
     height: 500px;
     background-color: #CDD4D0;
     border-radius: 10px;
