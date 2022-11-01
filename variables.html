@@ -80,7 +80,7 @@
             <h2>This page is currently under construction.</h2>
             <br>
 
-            <object class="under-construction-svg" data="/svgs/underconstruction.svg" height="100px" width="100px"></object>
+            <object class="under-construction-svg" data="/images/newPic.jpg" height="100px" width="100px"></object>
         </div>
 
     </div>
@@ -125,13 +125,23 @@
             window.print();
         }
 
+        // anime({
+        //     targets: '.under-construction-svg',
+        //     rotate: '1turn',
+        //     duration: 2000,
+        //     easing: 'easeInOutSine',
+        //     loop: true
+        // });
+
         anime({
             targets: '.under-construction-svg',
-            rotate: '1turn',
+            scale: 1.5,
             duration: 2000,
+            direction: 'alternate',
             easing: 'easeInOutSine',
             loop: true
         });
+
 
     </script>
 
